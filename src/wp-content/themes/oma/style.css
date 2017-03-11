@@ -1,0 +1,257 @@
+body{
+/* Ladataan taustalla kaikki mouseover kuvat jotta ovat valmiita kun tarvitaan */
+ background-image: url("/wp-content/themes/oma/img/bg.png"),url("/wp-content/themes/oma/img/tassu.png"),url("/wp-content/themes/oma/img/quill2mo.png");
+ background-repeat: no-repeat,no-repeat,no-repeat;
+ background-position: -9999px,-9999px,-9999px;
+/* ^^ */
+ background-color:#beaa87;
+ color:#333;
+ font-family:sans-serif;
+}
+p{
+ -webkit-hyphens: auto;
+ -moz-hyphens: auto;
+ -ms-hyphens: auto;
+ hyphens: auto;
+}
+blockquote{
+ //background-color:#dcc59c;
+ color:#777;
+ font-style:italic;
+}
+img{/* Kuvat */
+ padding:10px;/* Ympärille 10px tilaa ettei ahdista */
+ padding-top:0px;/* Ylös ei kuitenkaan jätetä tilaa */
+}
+hr{/* hr elementtien muotoilu */
+ background:url(/wp-content/themes/oma/img/hr.png) repeat-x top left;/* Tassut vasemmalta oikealle toistetaan x-akselilla(<-->) */
+ border:0;/* Ei reunuksia */
+ width:100%;/* Leveys ympäröivän elementin mukaan */
+ height:25px;/* Korkeus taustakuvan mukainen 25px */
+}
+a{/* Linkit */
+ color:#505919;
+}
+a:visited{/* Vieraillut linkit */
+ color:#333;
+}
+a:hover{/* Linkkien mouseover */
+ text-decoration:none;/* Poistetaan alleviivaus */
+}
+h1{/* Sivujen otsikot */
+ font-family:sans;
+ color:#5e320b;
+ text-align:initial;/* 01.04.2016: Tämä korjaa artikkelisivulla olevat otsikot tasaamaan vasemmalle eikä justified kuten 'artikkeli'-luokka määrää */
+}
+#form-allowed-tags{/* Piilotetaan kommentoinnin "voit käyttää näitä..." litania*/
+ display:none;
+}
+#otsikkosivu2{/* Etusivun otsikon keskitys*/
+ text-align:center;
+}
+#wrapper{
+ display:block;
+ width:90%;
+ margin:0px auto;
+}
+#header{/* Otsikkoalue(otsikkokuva) */
+ min-width:900px;/* Elementin leveys vähintään 900px, tai sisällön leveys jos mahdollista */
+}
+#content{/* Itse sivun sisältö */
+ width:900px;/* Leveys aina tasan 900px */
+ margin:auto;/* Ja keskelle ruutua */
+}
+#comments{/* Kommenttialue */
+ width:900px;/* Leveys */
+ margin:auto;/* Elementti keskelle ruutua */
+}
+#sidebar{/* Valikkopalkki */
+ background-color:#67741f;
+ width:100%;/* Leveys 100%;*/
+ min-width:900px;/* Leveys kuitenkin vähintään 900px */
+ text-align:left;/* Tekstin tasaus vasemmalle */
+}
+#sidebar ul{
+ white-space:nowrap;/* Ei rivinvaihtoja listan sisällä valikossa */
+}
+#delimiter{ 
+ clear:both;
+}
+#footer{/* Alatunniste */
+ width:900px;/* Leveys */
+ margin:auto;/* Elementti keskelle ruutua */
+ font-size:x-small;/* Teksti on xtra pientä */
+ text-align:center;/* Teksti keskelle elementtiä */
+}
+#respond input{/* Kommenttikenttien muotoilu */
+ border:1px solid black;
+}
+a.post-edit-link{/* Muokkaus linkki */
+ color:red;
+ padding-left:15px;
+ font-weight:initial;
+ background-image:url("/wp-content/themes/oma/img/quill2.png");
+ background-repeat:no-repeat;
+ background-position:left;
+}
+a.post-edit-link:hover{
+ background-image:url("/wp-content/themes/oma/img/quill2mo.png");
+}
+.notes{
+ list-style:none;
+}
+.notes li{
+ border-left:10px solid green;
+}
+.authordate{/* Artikkelin kirjoittajan ja päivyksen muotoilu */
+ font-weight:bold;/* Lihavointi */
+}
+.comment-form label{/* Kenttien selitykset eli labelit */
+ display:block;/* Rivinvaihto halutaan jokaisen jälkeen siksi block */
+}
+.comment-author-jesse .fn{/* Käyttäjäkohtainen nimimerkkimuotoilu :) */
+ //color:green;
+ color:#f33;
+ text-indent:17px;
+ background-image:url("/wp-content/themes/oma/img/adm.png");
+ background-repeat:no-repeat;
+ background-position:left;
+}
+.comment-author .fn{/* Kommentin kirjoittajan nimimerkki */
+ font-weight:bold;/* Lihavoidaan */
+ display:inline-block;
+}
+.commentlist{/* Kommenttilista */
+ list-style:none;/* Ei oikeastaan lista ollenkaan ulkonäöllisesti */
+ background-color:#b3a07f;
+}
+.comment{/* Kommentti laatikko*/
+ border-bottom:1px dotted green;
+ padding-top:30px;
+}
+.comment a{/* Kommentin linkit */
+ text-decoration:none;/* Ei mitään erotusta normaali tekstiin */
+}
+.comment a:hover{/* Kommentin linkit mouseover */
+ text-decoration:underline overline;/* Sekä yläpuolinen viivaus että alleviivaus */
+}
+.comment p{/* Kommentin teksti eli itse kommentti */
+ color:black;
+}
+.submit{/* kommentin lähetysnapin taustakuva kirjekuori */
+ text-indent:15px;
+ background:url(/wp-content/themes/oma/img/kirjekuori.png) no-repeat 1% 50%;
+ background-color:#ccc;
+}
+.artikkeli{/* Artikkelin sisältö */
+ display:inline-block;
+ width:100%;
+ text-align:justify;/* Tekstin tasaus molemmille sivuille */
+}
+.sivunsisalto{/* Sivun sisältö */
+ display:inline-block;
+ width:100%;
+ text-align:justify;/* Tekstin tasaus molemmille sivuille */
+}
+.alignnone{
+ display:block;
+}
+.wp-smiley{/* Hymiöiden muotoilu eroaa kuvien muotoilusta */
+ padding:0px;/* Ei tilaa ympärille */
+ display:inline;/* Ja ovat tavallisia inline elementtejä */
+ vertical-align:middle;
+}
+.wp-caption-text{/* Kuvateksti */
+ color:#555;
+ text-align:left;
+ position:relative;/* Sijainti on suhteessa kuvaan johon teksti liittyy */
+ border-left:10px solid #beaa87;
+ bottom:15px;
+ background-color:#cfb993;
+ padding-bottom:10px;
+}
+.wp-caption img{
+ padding-bottom:0px;/* Kuvan, jossa on kuvateksti alareunan padding jätetään pois koska se on turha */
+}
+.wp-caption{
+ position:relative;
+}
+.menu{/* Valikko */
+ text-align:center;/* Tekstit keskitetään */
+ line-height:50px;/* Valikon korkeus määritetään rivin korkeudella */
+}
+.menu ul{
+ padding:0px;
+}
+.menu li{/* Valikon listan elementit */
+ list-style:none;/* Ei lista ulkoisesti laisinkaan */
+ position:relative;
+ display:inline-block;
+ font-weight:bold;
+}
+.menu a{/* Valikon linkit ovat kuin tavallista tekstiä */
+ text-decoration:none;
+ color:#d3d4d5;
+}
+.menu-item{/* Valikon elementit */
+ margin-left:5px;
+ margin-right:5px;
+ min-width:70px;/* Leveys on vähintään taustakuvan leveys */
+}
+.menulinkki{/* Taataan että valikkolinkkien koko alue on klikattavissa eikä vain teksti */
+ width:inherit;/* Korkeus ja leveys periytyy ylemmältä elementiltä joka tarkoittaa tässä tapauksessa li-elementtiä */
+ height:inherit;
+ display:inline-block;/* inline elementillä ei ole korkeutta ja leveyttä joten elementin on oltava inline-block */
+}
+.menu-item:hover{/* Valikon mouseover efekti */
+ background-image: url("/wp-content/themes/oma/img/bg.png");
+ background-repeat: no-repeat;
+ background-position: center;
+}
+.sub-menu .menu-item:hover{/* Alivalikoiden mouseover */
+ background-image:url("/wp-content/themes/oma/img/tassu.png");
+ background-repeat:no-repeat;
+ background-position:left;
+}
+.menu-item:hover .sub-menu{/* Näytetään alivalikko kun kursori on valikkoelementin päällä */
+ display:inline;
+}
+.title{
+ font-size:11pt;
+ font-family:verdana;
+ font-weight:bold;
+ color:#5e320b;
+}
+.sub-menu{/* Alivalikko */
+ display:none;/* Oletuksena piilotettu */
+ background-color:#67741f;
+ text-align:left;
+ position:absolute;
+ left:0px;
+ top:50px;/* Isännän korkeus on 50px joten alivalikko laitetaan 50px alemmas => täsmälleen alareunaan */
+ line-height:25px;
+ z-index:100;/* Varmistetaan että on aina päällimäisenä */
+}
+.sub-menu .menu-item{/* Alivalikon linkit */
+ text-indent:10px;/* Tehdään tilaa mouseover kuvalle */
+ margin:0px;
+ margin-left:2px;/*Vähän marginaalia sivuille niin ei ahdista */
+ margin-right:2px;
+}
+.sub-menu li{/*  */
+ display:block;/* Jokaisen elementin jälkeen on oltava rivinvaihto */
+ white-space: nowrap;/* Elementtien sisällä ei kuitenkaan saa olla rivinvaihtoja */
+}
+.afg-gallery img{
+ padding:0px;
+ margin:0 auto;
+}
+.alignright{/* Tasaus oikealle */
+ float:right;
+}
+.alignleft{/* Tasaus vasemmalle */
+ float:left;
+}
+.aligncenter{/* Keskitys */
+ margin:auto;
+}

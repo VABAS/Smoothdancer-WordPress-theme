@@ -1,6 +1,6 @@
 # WordPress teema smoothdancer.fi sivustolle
 
-WordPress teema smoothdancer.fi sivustolle. Sisältää kuvia sivustosta, koska internetistä se on poistunut.
+WordPress teema smoothdancer.fi sivustolle. Sisältää kuvia sivustosta, koska internetistä se on poistunut. Lähdekoodi [src](https://github.com/VABAS/Smoothdancer-WordPress-theme/blob/master/src) kansiossa joka vastaa WordPress asennushakemistoa.
 
 
 ## Kuvia
